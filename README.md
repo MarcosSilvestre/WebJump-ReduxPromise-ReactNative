@@ -4,10 +4,9 @@ Test for Web Jump Agency in react native
 
 Lista de filmes usando a API aberta.
 
-• Bibibliotecas utilizadas no desenvolvimento:
+Bibibliotecas utilizadas no desenvolvimento:
 
-
-API aberta do Trakt (trakt.docs.apiary.io).
+• API aberta do Trakt (trakt.docs.apiary.io).
 
 • https://www.npmjs.com/package/redux, para controle de estado.
 
