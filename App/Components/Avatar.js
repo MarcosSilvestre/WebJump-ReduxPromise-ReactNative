@@ -1,6 +1,16 @@
+import React from 'react';
 import { ColorPropType, StyleSheet, Text, View } from 'react-native';
 import PropTypes from 'prop-types';
-import React from 'react';
+
+const styles = StyleSheet.create({
+  container: {
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  text: {
+    color: 'white',
+  },
+});
 
 export default function Avatar({ size, backgroundColor, initials }) {
   const style = {
@@ -22,13 +32,3 @@ Avatar.propTypes = {
   size: PropTypes.number.isRequired,
   backgroundColor: ColorPropType.isRequired,
 };
-
-const styles = StyleSheet.create({
-  container: {
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  text: {
-    color: 'white',
-  },
-});

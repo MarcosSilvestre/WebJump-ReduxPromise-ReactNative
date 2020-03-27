@@ -1,39 +1,29 @@
-import { StyleSheet, View, Text } from 'react-native';
-import PropTypes from 'prop-types';
 import React from 'react';
 
-import Avatar from './../Avatar';
-import getAvatarColor from './../../utils/getAvatarColor';
-import getInitials from './../../utils/getInitials';
-import {
-  Container,
-  Info,
-  FullName,
-  Year
-} from './styles'; 
+// components
+import Avatar from '../Avatar';
 
-export default class MovieItem extends React.Component {
-  
+// utils
+import getAvatarColor from '../../utils/getAvatarColor';
+import getInitials from '../../utils/getInitials';
 
-  render() {
-    const { fullname, year } = this.props;
+// styles components
+import { Container, Info, FullName, Year } from './styles';
 
-    return (
-      <Container>
-          <Avatar
-            size={35}
-            initials={getInitials(fullname)}
-            backgroundColor={getAvatarColor(fullname)}
-          />
-          <Info>
-              <FullName>{fullname}</FullName>
-              { year  && (<Year>{year}</Year>) }
-          </Info>
+function MovieItem({ fullname, year }) {
+  return (
+    <Container>
+      <Avatar
+        size={35}
+        initials={getInitials(fullname)}
+        backgroundColor={getAvatarColor(fullname)}
+      />
+      <Info>
+        <FullName>{fullname}</FullName>
+        {year && <Year>{year}</Year>}
+      </Info>
     </Container>
-    );
-  }
+  );
 }
 
-MovieItem.propTypes = {
-  fullname: PropTypes.string.isRequired
-};
+export default MovieItem;
