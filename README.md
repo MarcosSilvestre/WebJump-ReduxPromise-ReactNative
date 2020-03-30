@@ -23,7 +23,7 @@ Realizar testes unitários com estas bibliotecas:
 • https://www.npmjs.com/package/jest, para testes unitários de lógica.
 
 • https://www.npmjs.com/package/@testing-library/react-native, para testes unitários de componentes.
-(Após uma avaliação, foi utilizado o E2E Detox)
+***(Após uma avaliação, foi utilizado o E2E Detox)
 
 //--------------------------------------------------------------------------------------------
 
