@@ -1,5 +1,5 @@
 # WebJump-ReduxPromise-ReactNative
-Test for Web Jump Agency in react native
+Web Jump Agency`s chalenge in react native
 
 
 Lista de filmes usando a API aberta.
