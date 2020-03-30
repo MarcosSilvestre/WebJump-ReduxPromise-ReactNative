@@ -90,6 +90,7 @@ class Main extends React.Component {
                 placeholder="Search..."
                 style={stylesX.formInputSearchInput}
                 onChangeText={(v) => this.searchMovie(v)}
+                testID="searchInput"
               />
             </Item>
           </FormSearch>

@@ -5,7 +5,13 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "eject": "expo eject"
+    "test": "node_modules/.bin/jest test/**/*.spec.js",
+    "eject": "expo eject",
+    "jest": "node_modules/.bin/jest",
+    "test:debug": "node --inspect-brk node_modules/jest/bin/jest.js --runInBand"
+  },
+  "jest": {
+    "preset": "jest-expo"
   },
   "dependencies": {
     "axios": "^0.19.2",
@@ -17,14 +23,18 @@
     "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.0.tar.gz",
     "react-native-web": "~0.11.7",
     "react-redux": "^7.2.0",
+    "react-test-renderer": "^16.13.1",
     "redux": "^4.0.5",
     "redux-promise": "^0.6.0",
     "styled-components": "^5.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
+    "@testing-library/react-native": "^5.0.3",
     "babel-eslint": "^10.1.0",
     "babel-preset-expo": "~8.0.0",
+    "detox": "^16.0.1",
+    "detox-expo-helpers": "^0.6.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-config-prettier": "^6.10.1",
@@ -33,7 +43,20 @@
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^2.5.1",
-    "prettier": "^2.0.2"
+    "expo-detox-hook": "^1.0.10",
+    "jest-expo": "^36.0.1",
+    "prettier": "^2.0.2",
+    "react-native-testing-library": "^1.13.0"
   },
-  "private": true
+  "private": true,
+  "detox": {
+    "test-runner": "jest",
+    "configurations": {
+      "ios.sim": {
+        "binaryPath": "bin/Exponent.app",
+        "type": "ios.simulator",
+        "name": "iPhone 11"
+      }
+    }
+  }
 }

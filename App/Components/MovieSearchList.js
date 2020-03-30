@@ -32,6 +32,7 @@ class MovieSearchList extends React.Component {
         data={search}
         renderItem={this.renderItem}
         keyExtractor={keyExtractor}
+        testID="MovieSearchListTest"
       />
     );
   }
