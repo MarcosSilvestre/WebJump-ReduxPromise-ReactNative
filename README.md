@@ -27,18 +27,18 @@ Realizar testes unitários com estas bibliotecas:
 
 //--------------------------------------------------------------------------------------------
 
-***For Detox React Native Testing Library to work, we will need:***
+***Para que o Detox React Native Testing Library funcione, nós precisamos:***
 
-Download a built version of the Expo iOS app that Detox can use to hook into. 
-1 - Go to the Expo Tools page (https://expo.io/tools#client) and click the “Download IPA” link. Expand the downloaded archive, then change the name of the folder to “Exponent.app”. 
 
-2 - Create a bin folder in your project and move “Exponent.app” into it.
+1 - Acesse a página Expo Tools (https://expo.io/tools#client) e clique no link "Download IPA". Expanda o arquivo baixado e altere o nome da pasta para "Exponent.app".
 
-3 - yarn ios
+2 - Crie uma pasta bin no seu projeto e mova “Exponent.app” para ele.
 
-4 - detox test
+3 - rode o comando: yarn ios
 
-You can see more in: (https://blog.expo.io/testing-expo-apps-with-detox-and-react-native-testing-library-7fbdbb82ac87)
+4 - rode o comando: detox test
+
+Você pode ver mais em: (https://blog.expo.io/testing-expo-apps-with-detox-and-react-native-testing-library-7fbdbb82ac87)
 
 
 
